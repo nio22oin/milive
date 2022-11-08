@@ -28,6 +28,6 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@v2
       with:
-       name: app
-       path: app/build/outputs/apk/release/app-release.apk 
+        name: my-build-apk
+        path: ./**/*.apk
 
