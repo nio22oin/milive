@@ -30,5 +30,4 @@ jobs:
       with:
        name: app
        path: app/build/outputs/apk/release/app-release.apk 
-    - name: Execute Gradle package
-      run: ./gradlew package   
+
