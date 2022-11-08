@@ -24,10 +24,11 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-    - name: Execute Gradle package
-      run: ./gradlew package      
+   
     - name: Upload APK
       uses: actions/upload-artifact@v2
       with:
        name: app
        path: app/build/outputs/apk/release/app-release.apk 
+    - name: Execute Gradle package
+      run: ./gradlew package   
